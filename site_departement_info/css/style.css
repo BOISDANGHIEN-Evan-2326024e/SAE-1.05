@@ -12,19 +12,20 @@ body {
     margin: 0;
     padding: 0;
     color: black;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* Styles pour la barre de navigation */
 .navbar {
-    font-family: 'Nunito', sans-serif;
-
     width: 100%;
-    height: 50%;
-    background-color: #38B0E3;
+    background-color: #1f98cf;
     /* Bleu foncé */
     color: white;
     /* Ajout de padding pour éviter le décalage */
     box-sizing: border-box;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
     /* Inclure le padding dans la largeur totale */
 }
 
@@ -35,6 +36,9 @@ body {
     flex-direction: row;
     align-items: start; /* Alignement vertical au centre */
     justify-content: space-around;
+    margin-top: 0px;
+
+
 }
 
 @media (max-width: 500px)
@@ -52,8 +56,8 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: all 0.3s ease;
     border-radius: 2px;
+    padding: 5px;
 }
 
 /* Style au survol */
@@ -64,14 +68,31 @@ body {
     /* Texte bleu foncé au survol */
 }
 
-.nav-item:focus {
-    background-color: #c72828;
-    /* Fond blanc au survol */
-    color: #38B0E3;
-    /* Texte bleu foncé au survol */
-}
-
 .logonormal {
     justify-content: center;
     width : 30%
+}
+
+#pageactuelle{
+    border-bottom: solid #ffffff 3px;
+}
+
+#intra{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#intra:over{
+    width: 40px;
+    height: 40px;
+}
+
+.top{
+    background-color: #28b1e2;
+    font-weight: 900;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Verdana', sans-serif !important;
+    font-weight: 100 !important; /* ou 'bold' */
 }
