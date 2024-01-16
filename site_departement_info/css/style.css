@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+body {
+    background: url("./images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    font-family: 'Nunito', sans-serif;
+
+    width: 100%;
+    background-color: #2f8dc4;
+    /* Bleu foncé */
+    color: white;
+    /* Ajout de padding pour éviter le décalage */
+    box-sizing: border-box;
+    /* Inclure le padding dans la largeur totale */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: start; /* Alignement vertical au centre */
+    justify-content: space-around;
+}
+
+@media (max-width: 500px)
+{
+    .nav-links {
+        flex-direction: column;
+        align-items: center; /* Alignement vertical au centre */
+        justify-content: flex-end; /* Espace équitable entre les éléments */
+        /* Alignement à droite */
+    }
+}
+
+/* Style des liens de navigation */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Style au survol */
+.nav-item:hover {
+    background-color: #fff;
+    /* Fond blanc au survol */
+    color: #2f8dc4;
+    /* Texte bleu foncé au survol */
+}
+
