@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url("./images/wallpaper.jpg");
     background-repeat: no-repeat;
@@ -14,7 +19,8 @@ body {
     font-family: 'Nunito', sans-serif;
 
     width: 100%;
-    background-color: #2f8dc4;
+    height: 50%;
+    background-color: #38B0E3;
     /* Bleu foncé */
     color: white;
     /* Ajout de padding pour éviter le décalage */
@@ -54,7 +60,18 @@ body {
 .nav-item:hover {
     background-color: #fff;
     /* Fond blanc au survol */
-    color: #2f8dc4;
+    color: #38B0E3;
     /* Texte bleu foncé au survol */
 }
 
+.nav-item:focus {
+    background-color: #c72828;
+    /* Fond blanc au survol */
+    color: #38B0E3;
+    /* Texte bleu foncé au survol */
+}
+
+.logonormal {
+    justify-content: center;
+    width : 30%
+}
