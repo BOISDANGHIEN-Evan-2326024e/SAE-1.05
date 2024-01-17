@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    width: 100%;
+    background-color: #1f98cf;
+    /* Bleu foncé */
+    color: white;
+    /* Ajout de padding pour éviter le décalage */
+    box-sizing: border-box;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    /* Inclure le padding dans la largeur totale */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: start; /* Alignement vertical au centre */
+    justify-content: space-around;
+    margin-top: 0px;
+
+
+}
+
+@media (max-width: 500px)
+{
+    .nav-links {
+        flex-direction: column;
+        align-items: center; /* Alignement vertical au centre */
+        justify-content: flex-end; /* Espace équitable entre les éléments */
+        /* Alignement à droite */
+    }
+}
+
+/* Style des liens de navigation */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+/* Style au survol */
+.nav-item:hover {
+    background-color: #fff;
+    /* Fond blanc au survol */
+    color: #38B0E3;
+    /* Texte bleu foncé au survol */
+}
+
+.logonormal {
+    justify-content: center;
+    width : 30%
+}
+
+#pageactuelle{
+    border-bottom: solid #ffffff 3px;
+}
+
+#intra{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#intra:over{
+    width: 40px;
+    height: 40px;
+}
+
+.top{
+    background-color: #28b1e2;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.top h1{
+    margin-left: 2%;
+}
+
+.content{
+    margin: 2% 5%;
+}
+
+.parcours{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border-style: solid;
+    border-width: 10px;
+    border: #1f98cf;
+}
+
+#titres{
+    margin: 5% 3% 0%;
+}
