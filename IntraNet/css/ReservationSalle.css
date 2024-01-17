@@ -62,7 +62,7 @@ a{text-decoration: none; }
 .salle {
     margin-top: 50px;
     margin-left: 30px;
-    width: 21%;
+    width: 22%;
     height: 7%;
     background: #69c9f0;
     border : aliceblue;
@@ -83,7 +83,7 @@ a{text-decoration: none; }
     flex-direction: row;
     margin-top: 50px;
     margin-left: 30px;
-    width: 22%;
+    width: 23%;
     height: 7%;
     background: #69c9f0;
     border : aliceblue;
@@ -94,13 +94,16 @@ a{text-decoration: none; }
 }
 
 .coucou {
-    margin-top: 25px;
-    margin-left: 30px;
     flex-direction: row;
-    width: 21%;
-    height: 7%;
     padding: 20px 45px 20px 20px;
     font-size: 16px;
+}
+
+.choix{
+    margin-top: 45px;
+    margin-left: 30px;
+    width: 21%;
+    height: 7%;
 }
 
 .salle_rez_de_chaussee_general{
