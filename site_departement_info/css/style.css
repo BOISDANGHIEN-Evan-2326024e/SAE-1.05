@@ -6,9 +6,6 @@
 }
 
 body {
-    background: url("./images/wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0;
     padding: 0;
     color: black;
@@ -118,4 +115,10 @@ body {
 
 #titres{
     margin: 5% 3% 0%;
+}
+
+.toutesactu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
