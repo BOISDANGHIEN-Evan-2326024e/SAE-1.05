@@ -90,9 +90,32 @@ body {
 
 .top{
     background-color: #28b1e2;
-    font-weight: 900;
     color: #fff;
     padding: 10px;
-    font-family: 'Verdana', sans-serif !important;
-    font-weight: 100 !important; /* ou 'bold' */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.top h1{
+    margin-left: 2%;
+}
+
+.content{
+    margin: 2% 5%;
+}
+
+.parcours{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border-style: solid;
+    border-width: 10px;
+    border: #1f98cf;
+}
+
+#titres{
+    margin: 5% 3% 0%;
 }
