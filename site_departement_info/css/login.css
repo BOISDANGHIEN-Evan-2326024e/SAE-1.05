@@ -1,0 +1,122 @@
+body{
+    background :url("https://bc2e.studyrama.com/uploads/bc2e/4785/photo_2311.webp") no-repeat;
+    background-size: cover ;
+    background-position: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logonormal {
+    justify-content: center;
+    width : 30%
+}
+
+#pageactuelle{
+    border-bottom: solid #ffffff 3px;
+}
+
+#intra{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#intra:over{
+    width: 40px;
+    height: 40px;
+}
+
+.top{
+    background-color: #28b1e2;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.top h1{
+    margin-left: 2%;
+}
+
+.content{
+    margin: 2% 5%;
+}
+
+#container{
+    font-family : "Verdana",sans-serif;
+    width:420px;
+    background: transparent;
+    border: 2px solid cyan;
+    color : #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #ffffff;
+    padding:30px 40px;
+    margin:0 auto;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 7%;
+    background: transparent;
+    border : none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top:10px;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+}
+.message {
+    margin-top: 10px;
+    text-align: center;
+    color:#53af57;
+    background-color: #fff;
+}
+#deco {
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: #af5353;
+    display: none;
+}
