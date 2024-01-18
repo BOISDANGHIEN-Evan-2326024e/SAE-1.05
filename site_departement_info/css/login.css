@@ -159,7 +159,7 @@ input[type=submit]:hover {
     background-color: #ffffff;
     border: solid 2px #28b1e2;
     border-radius: 50px;
-    display: none;
+    display: block;
 }
 #gointra:hover {
     color: #fff;
