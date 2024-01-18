@@ -90,10 +90,6 @@ body {
     cursor: pointer;
 }
 
-#intra:hover{
-    
-}
-
 .top{
     background-color: #28b1e2;
     color: #fff;
@@ -210,3 +206,22 @@ body {
     margin:20px;
     font-size: 25px;
 }
+
+.footer{
+
+    background-color: #1f98cf;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lien{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+}
+
