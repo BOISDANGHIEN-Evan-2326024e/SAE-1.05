@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/BoutiqueBDE.css">
     <title>Intra-Amu</title>
+    <script>
+        // Fonction pour afficher le pop-up
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // Fonction pour masquer le pop-up
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+    </script>
 </head>
 <body>
 <header>
-
     <nav class="navbar">
         <div class="e">
             <a href="index.html"><img src="img/logo_amu_header.png" alt="Accueil"></a>
@@ -19,12 +30,20 @@
             <li><a href="Actualite.html">Actualité</a><li>
             <li><a href="BoutiqueBDE.html">Boutique BDE</a><li>
             <li><a href="ReservationSalle.html">Reservation salle</a><li>
-
         </ul>
     </nav>
 </header>
+<div class="overlay" id="popup">
+    <div class="popup" onclick="hidePopup()">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <p>Ce produit est disponible au BDE, rends-toi là-bas pour l'acheter.</p>
+    </div>
+</div>
     <div class="produit">
         Boutique du BDE Inform'Aix
+    </div>
+    <div class="partie">
+    Partie Vêtement :
     </div>
     <div class="vrai_produit">
         <div class="vrai_vrai_produit">
@@ -60,11 +79,64 @@
                     <div>Tailles disponibles : Toutes</div></a>
             </div>
         <div class="vrai_vrai_produit">
-            <a href="https://informaix.sumupstore.com/article/sweat-inform-aix-noir">
-            <div><img src="img/pull_noir.png"></div>
+            <div><img src="img/pull_noir.png">
+            </div>
             <div>Prix : 35€</div>
                 <div>Tailles disponibles : Toutes sauf S et M</div></a>
         </div>
     </div>
+    <div class="partie2">
+        Partie Nourriture et boissons :
+    </div>
+<div class="vrai_produit">
+    <div class="vrai_vrai_produit"><a onclick="showPopup()">
+            <div><img src="img/dragibus.png"></div>
+            <div>Prix : 1€</div>
+            <div>Petit paquet de bonbon au choix parmis ceux disponible</div></a>
+    </div>
+    <div class="vrai_vrai_produit"><a onclick="showPopup()">
+            <div><img src="img/COCA-33cl.webp"></div>
+            <div>Prix : 1€</div>
+            <div>Canette de Coca Cola</div></a>
+    </div>
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/canette_red_bull.jpg"></div>
+            <div>Prix : 1,5€</div>
+            <div>Canette de Red Bull</div></a>
+    </div>
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/496032_d1.jpg"></div>
+            <div>Prix : 1€</div>
+            <div>Canette d'Ice tea ou d'une autre boisson dans celles disponibles</div></a>
+    </div>
+</div>
+<div class="vrai_produit">
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/m&ms.webp"></div>
+            <div>Prix : 1€</div>
+            <div>Petit paquet de m&m's</div></a>
+    </div>
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/lays_chips_nature_45g_centrale_ethnique.jpg"></div>
+            <div>Prix : 1€</div>
+            <div>Petit paquet de chips avec goût aux choix parmis ceux disponibles</div></a>
+    </div>
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/gourdes-compote-de-pomme-andros-90g-recyclable.jpg"></div>
+            <div>Prix : 0,5€</div>
+            <div>Compote a la pomme</div></a>
+    </div>
+    <div class="vrai_vrai_produit">
+        <a onclick="showPopup()">
+            <div><img src="img/kinder%20bueno.jpg"></div>
+            <div>Prix : 1€</div>
+            <div>Kinder bueno ou une de ses variantes (white)</div></a>
+    </div>
+</div>
 </body>
 </html>

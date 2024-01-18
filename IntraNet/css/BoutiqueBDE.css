@@ -75,6 +75,7 @@ a{text-decoration: none; }
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 .vrai_vrai_produit{
@@ -94,11 +95,64 @@ a{text-decoration: none; }
     color : #000000;
     padding:30px 40px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin:0 auto;
 }
 
 .vrai_vrai_produit img{
     width: 90%;
     height: 90%;
+}
+
+.partie{
+    margin-left: 2%;
+    font-size: 20px;
+    border-color: #010618;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 20%;
+    border: 2px solid #132585;
+    text-align: center;
+}
+
+.partie2{
+    margin-left: 2%;
+    font-size: 20px;
+    border-color: #010618;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 25%;
+    border: 2px solid #132585;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Style pour la boîte du pop-up */
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style pour le bouton de fermeture */
+.close-btn {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
