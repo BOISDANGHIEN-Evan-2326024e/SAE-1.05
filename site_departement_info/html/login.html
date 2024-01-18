@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/login.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" media="screen" type="text/css" />
+</head>
+<body>
+    <div class="top">
+        <h1 class="phrase">BUT Aix en Provence - Département informatique</h1>
+        <img src="../images/logo/logoblanc.svg" width="300px"/>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="parcours-et-debouches.html" class="nav-item">Parcours et débouchés</a></li>
+            <li><a href="organisation-des-etudes.html" class="nav-item">Organisation des études</a></li>
+            <li><a href="bde.html" class="nav-item">BDE</a></li>
+            <a href="login.html" id="pageactuelle" ><img href="login.html" id="intra" src="../images/logo/logo-intranet.png"></a>
+        </ul>
+    </nav>
+    <div id="container">
+    <div id="cache">
+        <h1 id="tite">Connexion</h1>
+
+        <label><b id="inf1">Nom d'utilisateur</b></label>
+        <input type="text" id="username" placeholder="Entrer le nom d'utilisateur" name="username">
+
+        <label><b id="inf2">Mot de passe</b></label>
+        <input type="password" id="password" placeholder="Entrer le mot de passe" name="password" required>
+    </div>
+    <div id="cache2">
+        <label><b id="inf3" >Mot de passe</b></label>
+        <input type="password" id="cpassword" placeholder="Entrer le mot de passe" name="password" required>
+    </div>
+    
+    <input type="submit" id='submit' value="Accéder à l'intranet" onclick="envoie();" >
+    <input type="submit" id='mdp' value="Modifier mon mot de passe" onclick="modif();" >
+    <input type="submit" id='deco' value="Se déconnecter" onclick="deco();" >
+    <input type="submit" id='reset' value="Réinitialiser tous les mots de passes" onclick="reset();" >
+    <p class="message"></p>
+    
+    </div>
+    <footer class="footer">
+        <div class="flexFooter">
+            <img src="../images/logo/logoblanc.svg" class="left" width="230px"/>
+
+            <a href="https://discord.gg/k7c97u4DwS" target="_blank"><div src="../images/logo/logo-discord.png" title="Serveur discord" class="discord" ></div></a>
+            <a href="https://www.instagram.com/iutaixmars?igsh=bjcwZnNxaWw1dXVx" target="_blank"><div src="../images/logo/logo-instagram.webp" title="compte instagram" class="insta"></div></a>
+        </div>
+    </footer>
+    <script src="../javascript/formulaire.js"></script>
+</body>
+</html>
