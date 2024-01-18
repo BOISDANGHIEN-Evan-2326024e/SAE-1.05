@@ -18,6 +18,7 @@ if (localStorage.getItem('reset') == 1)
 {
     document.getElementsByClassName("message")[0].textContent = "Les mots de passes ont été réinitialisé avec succès";
     document.getElementsByClassName("message")[0].style.color = "#53af57";
+    localStorage.setItem('co', 0);
     localStorage.setItem('reset', 0)
 }
 
