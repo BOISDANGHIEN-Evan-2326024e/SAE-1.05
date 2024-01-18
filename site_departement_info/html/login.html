@@ -19,15 +19,21 @@
         </ul>
     </nav>
     <div id="container">
-    <h1>Connexion</h1>
+    <div id="cache">
+        <h1 id="tite">Connexion</h1>
 
-    <label><b>Nom d'utilisateur</b></label>
-    <input type="text" id="username" placeholder="Entrer le nom d'utilisateur" name="username">
+        <label><b id="inf1">Nom d'utilisateur</b></label>
+        <input type="text" id="username" placeholder="Entrer le nom d'utilisateur" name="username">
 
-    <label><b>Mot de passe</b></label>
-    <input type="password" id="password" placeholder="Entrer le mot de passe" name="password" required>
-
+        <label><b id="inf2">Mot de passe</b></label>
+        <input type="password" id="password" placeholder="Entrer le mot de passe" name="password" required>
+    </div>
+    <div id="cache2">
+        <label><b id="inf3" >Mot de passe</b></label>
+        <input type="password" id="cpassword" placeholder="Entrer le mot de passe" name="password" required>
+    </div>
     <input type="submit" id='submit' value="Accéder à l'intranet" onclick="envoie();" >
+    <input type="submit" id='mdp' value="Modifier mon mot de passe" onclick="modif();" >
     <input type="submit" id='deco' value="Se déconnecter" onclick="deco();" >
     <p class="message"></p>
     
