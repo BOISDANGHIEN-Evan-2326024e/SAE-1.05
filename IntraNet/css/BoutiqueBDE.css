@@ -8,7 +8,7 @@
 
 body{
     font-family: Verdana, sans-serif;
-    background-color: white;
+    background-color: darkslateblue;
 }
 
 
@@ -72,6 +72,7 @@ a{text-decoration: none; }
 }
 
 .vrai_produit{
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -79,19 +80,25 @@ a{text-decoration: none; }
 .vrai_vrai_produit{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    border-color: #28b1e2;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #ffffff;
     font-family : "Verdana",sans-serif;
-    width:300px;
+    height: 270px;
+    width:250px;
     text-align: center;
     font-size: 10px;
-    background: darkslateblue;
+    background: #f3f0f0;
     color : #000000;
     padding:30px 40px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin:0 auto;
 }
 
 .vrai_vrai_produit img{
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
