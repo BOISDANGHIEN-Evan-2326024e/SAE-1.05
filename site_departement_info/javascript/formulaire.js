@@ -5,6 +5,7 @@ if (localStorage.getItem('co') == 1)
     document.getElementById("submit").style.display = "none"
     document.getElementById("mdp").style.display = "block"
     document.getElementById("deco").style.display = "block"
+    document.getElementById("gointra").style.display = "block"
     document.getElementsByClassName("message")[0].style.color = "#53af57";
     document.getElementById("cache").style.display = "none";
     if (JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')] == "admin")
@@ -122,7 +123,7 @@ function deco()
 function apresReset()
 {
     var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent', 'admin'])
-    var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout', 'admin'])
+    var pw = JSON.stringify(['azerty', 'azerty', 'azerty', 'azerty', 'admin'])
 
     localStorage.setItem('un', un);
     localStorage.setItem('pw', pw);
@@ -155,11 +156,14 @@ function montrerForm()
     document.getElementById("password").placeholder = "Entrez de nouveau votre nouveau mot de passe";
     document.getElementById("tite").textContent = "Modification";
     document.getElementById("reset").style.display = "none";
+    document.getElementById("gointra").style.display = "none"
+    
 }
 function cacherForm()
 {
     document.getElementById("cache").style.display = "none";
     document.getElementById("cache2").style.display = "none";
+    document.getElementById("gointra").style.display = "block"
     console.log(localStorage.getItem('user'))
     if (String(JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')]) == "admin")
     {
@@ -170,11 +174,15 @@ function cacherForm()
 if (typeof localStorage.getItem('un') == "object")
 {
     var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent', 'admin'])
-    var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout', 'admin'])
+    var pw = JSON.stringify(['azerty', 'azerty', 'azerty', 'azerty', 'admin'])
 
     localStorage.setItem('un', un);
     localStorage.setItem('pw', pw);
     console.log(typeof localStorage.getItem('un'))
+}
+
+function intra() {
+    window.location.href = 'nouvelle_page.html';
 }
 
 console.log(JSON.parse(localStorage.getItem('un')));

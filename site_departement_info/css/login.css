@@ -110,7 +110,7 @@ input[type=submit]:hover {
     color: #53af57;
 }
 .message {
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: center;
     color:#53af57;
     background-color: #fff;
@@ -151,4 +151,18 @@ input[type=submit]:hover {
 }
 #cache2 {
     display: none;
+}
+#gointra {
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #28b1e2;
+    background-color: #ffffff;
+    border: solid 2px #28b1e2;
+    border-radius: 50px;
+    display: none;
+}
+#gointra:hover {
+    color: #fff;
+    background-color: #28b1e2;
+    border: solid 2px #fff;
 }
