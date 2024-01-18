@@ -183,7 +183,14 @@ if (typeof localStorage.getItem('un') == "object")
 }
 
 function intra() {
-    window.location.href = '../../IntraNet/index.html';
+    if (localStorage.getItem('co') == 1)
+    {
+        window.location.href = '../../IntraNet/index.html';
+    }
+    else
+    {
+        window.location.href = '../site_departement_info/html/redirect.html';
+    }
 }
 
 console.log(JSON.parse(localStorage.getItem('un')));
