@@ -189,7 +189,7 @@ function intra() {
     }
     else
     {
-        window.location.href = '../site_departement_info/html/redirect.html';
+        window.location.href = 'redirect.html';
     }
 }
 
