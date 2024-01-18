@@ -120,6 +120,12 @@ input[type=submit]:hover {
     background-color: #af5353;
     display: none;
 }
+#reset {
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: #af5353;
+    display: none;
+}
 #mdp {
     margin-top:10px;
     margin-bottom: 10px;
@@ -127,6 +133,10 @@ input[type=submit]:hover {
     display: none;
 }
 #deco:hover {
+    color: #af5353;
+    background-color: #fff;
+}
+#reset:hover {
     color: #af5353;
     background-color: #fff;
 }

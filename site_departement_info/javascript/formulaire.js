@@ -7,6 +7,17 @@ if (localStorage.getItem('co') == 1)
     document.getElementById("deco").style.display = "block"
     document.getElementsByClassName("message")[0].style.color = "#53af57";
     document.getElementById("cache").style.display = "none";
+    if (JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')] == "admin")
+    {
+        document.getElementById("reset").style.display = "block"
+    }
+}
+
+if (localStorage.getItem('reset') == 1)
+{
+    document.getElementsByClassName("message")[0].textContent = "Les mots de passes ont été réinitialisé avec succès";
+    document.getElementsByClassName("message")[0].style.color = "#53af57";
+    localStorage.setItem('reset', 0)
 }
 
 var nom = "";
@@ -89,6 +100,7 @@ function modif()
         montrerForm();
         changement = true;
         document.getElementsByClassName("message")[0].textContent = "Vous êtes connecté en tant que " + String(JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')]);
+        document.getElementsByClassName("message")[0].style.color = "#53af57";
     }
     else
     {
@@ -107,10 +119,28 @@ function deco()
     location.reload();
 }
 
+function apresReset()
+{
+    var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent', 'admin'])
+    var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout', 'admin'])
+
+    localStorage.setItem('un', un);
+    localStorage.setItem('pw', pw);
+    console.log(typeof localStorage.getItem('un'))
+
+    console.log(JSON.parse(localStorage.getItem('un')));
+    console.log(JSON.parse(localStorage.getItem('pw')));
+    localStorage.setItem('reset', 1);
+    location.reload();
+}
+
 function reset()
 {
     localStorage.clear();
+    apresReset();
+    
 }
+
 
 function montrerForm()
 {
@@ -124,17 +154,23 @@ function montrerForm()
     document.getElementById("inf3").textContent = "Confirmez le nouveau mot de passe";
     document.getElementById("password").placeholder = "Entrez de nouveau votre nouveau mot de passe";
     document.getElementById("tite").textContent = "Modification";
+    document.getElementById("reset").style.display = "none";
 }
 function cacherForm()
 {
     document.getElementById("cache").style.display = "none";
     document.getElementById("cache2").style.display = "none";
+    console.log(localStorage.getItem('user'))
+    if (String(JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')]) == "admin")
+    {
+        document.getElementById("reset").style.display = "block";
+    }
 }
 
 if (typeof localStorage.getItem('un') == "object")
 {
-    var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent'])
-    var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout'])
+    var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent', 'admin'])
+    var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout', 'admin'])
 
     localStorage.setItem('un', un);
     localStorage.setItem('pw', pw);
