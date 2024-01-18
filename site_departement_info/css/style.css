@@ -401,3 +401,24 @@ body {
     width: 100%;
     background-attachment: fixed;
 }
+.imgbde {
+    background :url("../images/bde.jpg") no-repeat;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 900px;
+    height: 600px;
+
+    background-size: cover; /* Couvre entièrement la div sans se répéter */
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.content4{
+    margin: 300px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 50px;
+    background-color: #fff;
+
+}

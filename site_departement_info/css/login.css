@@ -1,8 +1,5 @@
 body{
-    background :url("https://bc2e.studyrama.com/uploads/bc2e/4785/photo_2311.webp") no-repeat;
-    background-size: cover ;
-    background-position: center;
-    font-family: 'Verdana', sans-serif;
+    
 }
 
 *{
@@ -10,6 +7,14 @@ body{
     padding: 0;
 }
 
+#prbg {
+    background :url("https://bc2e.studyrama.com/uploads/bc2e/4785/photo_2311.webp") no-repeat;
+    background-size: cover ;
+    background-position: center;
+    font-family: 'Verdana', sans-serif;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
 
 
 
@@ -50,7 +55,7 @@ body{
     font-family : "Verdana",sans-serif;
     width:420px;
     background: transparent;
-    border: 2px solid cyan;
+    border: 2px solid #fff;
     color : #fff;
     border-radius: 10px;
     backdrop-filter: blur(10px);
