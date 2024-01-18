@@ -39,7 +39,7 @@ function deco() {
 }
 
 var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent'])
-var pw = JSON.stringify(['azerty', 'ouistiti', 'legoat', 'prout'])
+var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout'])
 
 localStorage.setItem('un', un);
 localStorage.setItem('pw', pw);
