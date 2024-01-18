@@ -1,3 +1,4 @@
+
 if (localStorage.getItem('co') == 1)
 {
     document.getElementsByClassName("message")[0].textContent = "Vous êtes connecté en tant que " + String(JSON.parse(localStorage.getItem('un'))[localStorage.getItem('user')]);
@@ -47,18 +48,24 @@ function envoie()
         pass2 = document.getElementById("cpassword").value;
         if (nom == JSON.parse(localStorage.getItem('pw'))[localStorage.getItem('user')])
         {
-            if (pass == pass2)
+            if (pass.length > 6)
             {
-                document.getElementsByClassName("message")[0].textContent = "Mot de passe changé avec succès."
-                document.getElementsByClassName("message")[0].style.color = "#53af57";
-                var nouvelleListe = JSON.parse(localStorage.getItem('pw'));
-                nouvelleListe[localStorage.getItem('user')] = pass;
-                localStorage.setItem('pw', JSON.stringify(nouvelleListe));
-                cacherForm();
-                modif();
+                if (pass == pass2)
+                {
+                    document.getElementsByClassName("message")[0].textContent = "Mot de passe changé avec succès."
+                    document.getElementsByClassName("message")[0].style.color = "#53af57";
+                    var nouvelleListe = JSON.parse(localStorage.getItem('pw'));
+                    nouvelleListe[localStorage.getItem('user')] = pass;
+                    localStorage.setItem('pw', JSON.stringify(nouvelleListe));
+                    cacherForm();
+                    modif();
+                    return;
+                }
+                document.getElementsByClassName("message")[0].textContent = "Les mots de passes de correspondent pas."
+                document.getElementsByClassName("message")[0].style.color = "#af5353";
                 return;
             }
-            document.getElementsByClassName("message")[0].textContent = "Les mots de passes de correspondent pas."
+            document.getElementsByClassName("message")[0].textContent = "Le mot de passe doit contenir au moins 7 caractères."
             document.getElementsByClassName("message")[0].style.color = "#af5353";
             return;
         }
@@ -100,6 +107,11 @@ function deco()
     location.reload();
 }
 
+function reset()
+{
+    localStorage.clear();
+}
+
 function montrerForm()
 {
     document.getElementById("cache").style.display = "block";
@@ -118,13 +130,15 @@ function cacherForm()
     document.getElementById("cache").style.display = "none";
     document.getElementById("cache2").style.display = "none";
 }
-if (typeof localStorage.getItem('un') == "undefined")
+
+if (typeof localStorage.getItem('un') == "object")
 {
     var un = JSON.stringify(['Maxime', 'Edson', 'Evan', 'Vincent'])
     var pw = JSON.stringify(['azerty', 'cactusmucche', 'legoat', 'prout'])
 
     localStorage.setItem('un', un);
     localStorage.setItem('pw', pw);
+    console.log(typeof localStorage.getItem('un'))
 }
 
 console.log(JSON.parse(localStorage.getItem('un')));
